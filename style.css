@@ -52,8 +52,8 @@ img { max-width: 100%; display: block; }
 .hero h1 { color: var(--hero-ink); font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 800; margin: 0 0 10px; }
 .wave { display: inline-block; transform-origin: 70% 80%; animation: wave 2.6s ease-in-out infinite; }
 .tagline { font-size: clamp(1rem, 2.4vw, 1.25rem); font-weight: 700; color: var(--hero-tag); margin: 0 0 18px; }
-.tagline span { white-space: nowrap; }
-.tagline i { font-style: normal; opacity: .55; margin: 0 4px; }
+.tagline { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.tagline span { white-space: nowrap; background: rgba(255,255,255,.6); border: 2px solid var(--accent); color: var(--accent-dark); padding: 3px 14px; border-radius: 999px; font-size: .95rem; }
 .welcome { color: var(--hero-ink); font-size: clamp(1.05rem, 2.2vw, 1.25rem); max-width: 600px; margin: 0 auto 28px; }
 
 .blob { position: absolute; border-radius: 50%; z-index: 1; opacity: 0.55; }
