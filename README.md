@@ -11,4 +11,4 @@ A warm, card-based portfolio with links to my latest live Vercel projects and th
 
 Plain HTML and CSS, no build step. Open `index.html` to view it locally.
 
-Contact: iderimadanye@gmail.com | [LinkedIn](https://linkedin.com/in/daniel-iderima-666298228/)
+Contact: iderimadanye@gmail.com | [LinkedIn](https://linkedin.com/in/daniel-iderima-ops/)
