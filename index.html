@@ -3,60 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iderima's Portfolio</title>
+    <title>Daniel Iderima | Portfolio</title>
+    <meta name="description" content="Daniel Iderima: WordPress and web developer, cloud and DevOps, QA and AI product engineer. Live demos and client sites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip" href="#work">Skip to the work</a>
+
+    <nav class="nav" aria-label="Main">
+        <a class="brand" href="#top">Daniel Iderima</a>
+        <ul>
+            <li><a href="#vercel">Live demos</a></li>
+            <li><a href="#sites">Websites</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <!--Introduction-->
-    <header>
-        <h1>Hi there, I'm Daniel 👋🏼</h1>
-        <p> WordPress & Frontend Developer | Aspiring Cloud & DevOps Engineer </p>
+    <header id="top" class="hero">
+        <div class="hero-inner">
+            <h1>Hi there, I'm Daniel <span class="wave" aria-hidden="true">👋🏼</span></h1>
+            <p class="tagline"><span>WordPress &amp; Web Developer</span> <i>|</i> <span>Cloud &amp; DevOps Engineer</span> <i>|</i> <span>QA Engineer</span> <i>|</i> <span>AI Product Engineer</span></p>
+            <p class="welcome">Pull up a chair, the kettle's on. The bugs are (mostly) squashed, the buttons all click, and everything below is ready to be poked at.</p>
+            <div class="cta">
+                <a class="btn primary" href="#work">See the work</a>
+                <a class="btn ghost" href="#contact">Say hello</a>
+            </div>
+        </div>
+        <span class="blob b1" aria-hidden="true"></span>
+        <span class="blob b2" aria-hidden="true"></span>
     </header>
 
-    <!--About-->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>I’m a creative web developer with 2+ years of experience in building websites with WordPress, HTML, and CSS. I'm learning JavaScript and diving into Cloud & DevOps. I love working on different projects both on prem & remotely and helping businesses grow online.</p>
-    </section>
-    
-    <!--Skills-->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>
-            <ul>
-                <li>WordPress (Elementor, WP Bakery, Divi, Astra...)</li>
+    <main id="work">
+        <!--Latest Vercel projects-->
+        <section id="vercel" class="block">
+            <div class="section-head">
+                <h2>Fresh off the press</h2>
+                <p>My latest projects, live on Vercel. Click around, try to break them.</p>
+            </div>
+            <div class="grid">
+                <a class="card" href="https://deli-mini-mart.vercel.app/" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/deli-card.jpg" alt="Deli Mini Mart homepage" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>Deli Mini Mart</h3>
+                        <p>A provision-store web app for Nigerian shoppers: cart, filtering, sorting, checkout and Google sign-in. I tested it with Vitest helpers and an introductory Playwright setup.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Supabase</li><li>Vitest</li><li>Playwright</li></ul>
+                        <span class="go">Open live demo →</span>
+                    </div>
+                </a>
+
+                <a class="card" href="https://zedu-whimsi.vercel.app/" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/zedu-card.jpg" alt="Zedu homepage with the Monday to Friday strip and product mockup" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>Zedu Homepage Redesign</h3>
+                        <p>A whimsical, animated landing page for a learning-community workspace: moving backgrounds, a Monday-to-Friday day strip and a live product mockup, while still feeling professional.</p>
+                        <ul class="tags"><li>React</li><li>TypeScript</li><li>Animation</li><li>Open source</li></ul>
+                        <span class="go">Open live demo →</span>
+                    </div>
+                </a>
+
+                <a class="card" href="https://agent-activity-timeline.vercel.app/" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/timeline-card.jpg" alt="Interactive demo of the pinned issue countdown" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>Agent Activity Timeline</h3>
+                        <p>An interactive demo for a product idea on Ziki, a platform where people work alongside AI agents: a countdown on pinned issues so nothing quietly goes stale.</p>
+                        <ul class="tags"><li>Product thinking</li><li>UX proposal</li><li>Demo</li></ul>
+                        <span class="go">Open live demo →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--Websites-->
+        <section id="sites" class="block">
+            <div class="section-head">
+                <h2>Websites I've built</h2>
+                <p>Real sites for real businesses, mostly WordPress.</p>
+            </div>
+            <div class="grid grid-4">
+                <a class="card" href="https://onyvaconcepts.com" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/onyva1-card.jpg" alt="Onyva Concepts website showing recruitment posts" loading="lazy" width="800" height="496"></div>
+                    <div class="body">
+                        <h3>Onyva Concepts</h3>
+                        <p>Business website built with WordPress and Elementor.</p>
+                        <ul class="tags"><li>WordPress</li><li>Elementor</li></ul>
+                        <span class="go">Visit site →</span>
+                    </div>
+                </a>
+
+                <a class="card" href="https://gadoagencymedia.com" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/gado-card.jpg" alt="Gado Agency about page" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>Gado Agency Media</h3>
+                        <p>Website for a Nigerian media and communications agency, covering its services, programmes and proposal enquiries.</p>
+                        <ul class="tags"><li>Media agency</li><li>Business website</li></ul>
+                        <span class="go">Visit site →</span>
+                    </div>
+                </a>
+
+                <a class="card" href="https://africanfashionfiesta.com" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/aff-card.jpg" alt="African Fashion Fiesta homepage showing a runway stage" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>African Fashion Fiesta</h3>
+                        <p>A fashion and cultural platform highlighting Africa's finest designers and creative artisans.</p>
+                        <ul class="tags"><li>WordPress</li><li>Culture</li></ul>
+                        <span class="go">Visit site →</span>
+                    </div>
+                </a>
+
+                <a class="card" href="https://bloomwiz.pro" target="_blank" rel="noopener">
+                    <div class="thumb photo"><img src="images/bloomwiz-card.jpg" alt="Bloomwiz news site homepage" loading="lazy" width="800" height="500"></div>
+                    <div class="body">
+                        <h3>Bloomwiz Pro</h3>
+                        <p>A WordPress blog with a variety of trending topics.</p>
+                        <ul class="tags"><li>WordPress</li><li>Blog</li></ul>
+                        <span class="go">Visit site →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--About-->
+        <section id="about" class="block narrow">
+            <h2>About me</h2>
+            <p>I'm a creative web developer with 2+ years of experience building websites with WordPress, HTML, and CSS. I'm learning JavaScript and diving into Cloud &amp; DevOps. I love working on different projects both on prem &amp; remotely and helping businesses grow online.</p>
+
+            <h3 class="sub">Skills</h3>
+            <ul class="chips">
+                <li>WordPress (Elementor, WP Bakery, Divi, Astra)</li>
                 <li>HTML / CSS / JavaScript</li>
-                <li>SEO & Digital Marketing</li>
-                <li>Git & GitHub</li>
-                <li>Currently Learning: Cloud & DevOps (AI/ML)</li>
+                <li>Testing: Vitest, Playwright (intro)</li>
+                <li>SEO &amp; Digital Marketing</li>
+                <li>Git &amp; GitHub</li>
+                <li class="learning">Currently learning: Cloud &amp; DevOps (AI/ML)</li>
             </ul>
-        </p>
-    </section>
+        </section>
 
-    <!--Projects-->
-     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Onyva Concepts:</strong><a href="https://onyvaconcepts.com"> Business website built with WordPress and Elementor</a></li>
-            <li><strong>Royal PLT:</strong><a href="https://royalplt.net"> SEO-focused company site with blog and feature updates</a></li>
-            <li><strong>African Fashion Fiesta:</strong><a href="https://africanfashionfiesta.com">  A fashion and cultural platform highlighting Africa’s finest designers and creative artisans.</a></li>	
-	    <li><strong>Bloomwiz pro:</strong><a href="https://bloomwiz.pro"> A WordPress blog website with a variety of trending topics.</a></li>
-
-        </ul>
-    </section>
-    
-    <!--Contact-->
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:iderimadanye@gmail.com">iderimadanye@gmail.com</a></p> 
-        <p>GitHub: <a href="https://babadeeesu.github.io/Iderima-portfolio/" target="_blank">Check my projects on GitHub</a></p>   
-        <p>LinkedIn: <a href="https://linkedin.com/in/daniel-iderima-666298228/" target="_blank">Check me out on LinkedIn</a></p>   
-
-    </section>
+        <!--Contact-->
+        <section id="contact" class="block narrow contact">
+            <h2>Let's build something</h2>
+            <p>Got a project, a bug that needs hunting, or a role that fits? I'd love to hear from you.</p>
+            <div class="cta">
+                <a class="btn primary" href="mailto:iderimadanye@gmail.com">iderimadanye@gmail.com</a>
+                <a class="btn ghost" href="https://github.com/BabadeeEsu" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn ghost" href="https://linkedin.com/in/daniel-iderima-666298228/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 Daniel Iderima</p>
+        <p>© 2026 Daniel Iderima. Made with care and a good deal of tea.</p>
     </footer>
 </body>
 </html>
-
